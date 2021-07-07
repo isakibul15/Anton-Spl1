@@ -1,0 +1,78 @@
+<!-- Created by MD.SAKIBUL ISLAM  on 27/4/21.
+Copyright © 2021 MD.SAKIBUL ISLAM . All rights reserved. -->
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+             <nav>
+                 <div class="logo">
+                     <img src="images/logo1.png">
+                 </div>
+             </nav>
+             <h2 class="sub-headline">
+                <span class="first-letter">S</span>ervices
+            </h2>
+             <div class="information">
+                 <div class="whitelay"></div>
+                 <img src="images/school.jpg" class="laptop">
+                 <div id="circle">
+                     <div class="feature one">
+                        <img src="images/setup.png">
+                        <div>
+                            <h1>Setup</h1>
+                            <p>Setup a new school</p>
+                        </div>
+                     </div>
+                     <div class="feature two">
+                        <img src="images/entryProcess.png">
+                        <div>
+                            <h1>Entry</h1>
+                            <p>Enter Datas for matters</p>
+                        </div>
+                     </div>
+                     <div class="feature three">
+                        <img src="images/reports.png">
+                        <div>
+                            <h1>Reports</h1>
+                            <p>Shows all reports</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                         <img src="images/results.png">
+                         <div>
+                            <h1>Results</h1>
+                            <p>Shows all sorts of results</p>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <div class="controls">
+                 <img src="images/arrow.png" id="upBtn">
+                 <h3>Features</h3>
+                 <img src="images/arrow.png" id="downBtn">
+             </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+                upBtn.onclick = function(){
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circle.style.transform =rotateSum;
+                    rotateValue = rotateSum;
+                }
+                downBtn.onclick = function(){
+                    rotateSum = rotateValue + "rotate(90deg)";
+                    circle.style.transform =rotateSum;
+                    rotateValue = rotateSum;
+            }
+        </script>
+    </body>
+</html>
